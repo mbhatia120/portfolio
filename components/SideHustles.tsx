@@ -24,24 +24,24 @@ const Svg2 = () => (
 export default function SideHustles() {
   const items = [
     {
-      title: "Tail Library",
+      title: "Code-Collab",
       link: "#0",
       icon: <Svg1 />,
-      description: "An easy-to-use components library based on Tailwind CSS.",
+      description: "Collaborative code editor functionality, enabling multiple users to code together in real time",
     },
     {
-      title: "KumoNext",
+      title: "Auction Platform",
       link: "#0",
       icon: <Svg2 />,
       description:
-        "A free frontend framework based on Tailwind CSS and Next.js.",
+        "Full-stack online auction platform with secure user authentication",
     },
   ];
 
   return (
     <section>
       <h2 className="font-inter-tight text-lg font-semibold text-gray-800 dark:text-gray-100 mb-6">
-        Side Hustles
+        Personal Projects
       </h2>
       <div className="grid min-[580px]:grid-cols-2 gap-4">
         {items.map((item, index) => (

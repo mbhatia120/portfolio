@@ -1,12 +1,12 @@
-import Tutorials from "@/components/Tutorials";
+import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import Articles from "@/components/Articles";
 import SideHustles from "@/components/SideHustles";
 import Recommendations from "@/components/Recommendations";
-import Newsletter from "@/components/Newsletter";
+import Skill from "@/components/Skill";
 
 export const metadata = {
-  title: "Home - DevFolio",
+  title: "Home",
   description: "Page description",
 };
 
@@ -14,11 +14,10 @@ export default async function Home() {
   return (
     <>
       <Experience />
-      <Tutorials />
-      <Articles />
       <SideHustles />
+      <Education />
+      <Skill />
       <Recommendations />
-      <Newsletter />
     </>
   );
 }

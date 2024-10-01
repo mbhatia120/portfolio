@@ -2,45 +2,22 @@
 
 import { useState, useEffect, useRef } from "react";
 
-import Image from "next/image";
-import TestimonialImg01 from "@/public/images/testimonial-01.jpg";
-import TestimonialImg02 from "@/public/images/testimonial-02.jpg";
-import TestimonialImg03 from "@/public/images/testimonial-03.jpg";
-import TestimonialImg04 from "@/public/images/testimonial-04.jpg";
-
 export default function Recommendations() {
   const items = [
     {
-      name: "Enrico Perry",
-      role: "CTO, medium.com",
-      image: TestimonialImg01,
-      link: "#0",
+      name: "Shekhara Mathur",
+      role: "Sr. Software Engineer at Citrix",
+      
+      link: "https://in.linkedin.com/in/shekhara-mathur-849422a6/",
       content:
-        "If there's one investment that's really paid off, it's hiring a professional developer. I love the results I get every day.",
+        "Mohit is a team player, quick learner and have mindset to adapt in new environment",
     },
     {
-      name: "Marta Lower",
-      role: "CTO, Vimeo",
-      image: TestimonialImg02,
-      link: "#0",
+      name: "Satyam Mehrotra",
+      role: "Staff Software Enginner at Citrix",
+      link: "",
       content:
-        "Thanks to Jordan, we were able to start our company in a matter of weeks. We have never been happier working with a freelancer.",
-    },
-    {
-      name: "John Kusac",
-      role: "CEO, Mailchimp",
-      image: TestimonialImg03,
-      link: "#0",
-      content:
-        "If there's one investment that's really paid off, it's hiring a professional developer. I love the results I get every day.",
-    },
-    {
-      name: "Lara Springfield",
-      role: "CTO, IndieHackers",
-      image: TestimonialImg04,
-      link: "#0",
-      content:
-        "Thanks to Jordan, we were able to start our company in a matter of weeks. We have never been happier working with a freelancer.",
+        "Thanks to Mohit, we were able to implement new features in NetScaler. I can rely on him to get work done.",
     },
   ];
 
@@ -200,13 +177,7 @@ export default function Recommendations() {
               className="shrink-0 w-[66.6667%] p-5 rounded-xl relative before:absolute before:inset-0 before:rounded-[inherit] before:-z-10 before:transition before:duration-300 data-[state=active]:before:bg-gradient-to-tr data-[state=active]:before:from-gray-100 data-[state=active]:before:to-gray-50 dark:data-[state=active]:before:bg-gradient-to-tr dark:data-[state=active]:before:from-gray-800 dark:data-[state=active]:before:to-gray-800/[0.65] before:opacity-0 data-[state=active]:before:opacity-100"
             >
               <div className="flex items-center space-x-3 mb-4">
-                <Image
-                  className="shrink-0 w-11 h-11 rounded-full shadow-lg"
-                  src={item.image}
-                  width={44}
-                  height={44}
-                  alt={item.name}
-                />
+                
                 <div>
                   <h3 className="text-sm font-semibold text-gray-800 dark:text-gray-100 mb-0.5">
                     <a
