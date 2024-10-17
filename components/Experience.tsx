@@ -32,10 +32,9 @@ export default function Experience() {
       icon: <Svg1 />,
       date: "May 2022 - Sep 2023",
       location: "Bengaluru, KA",
-      description: ["Developed a new feature, CertKey Digest to enhance security for customers resulting in overall revenue growth of $2M+.", 
-
+      description: ["Reduced SSL renegotiation time from 200ms to 120ms by implementing session key caching using Redis.","Developed a new feature, CertKey Digest to enhance security for customers resulting in overall revenue growth of $50K+.", 
         "Contributed to a cross-border team that reduced NetScaler build time by 10 minutes, resulting in faster deployment cycles.",
-        "Included SSL functionalities in GUI through ReactJS to improve in-house UX and launched 10+ RESTful APIs , while working with external and internal data stakeholders."
+        "Included SSL functionalities in GUI through ReactJS to improve in-house UX and launched 40+ RESTful APIs for 10,000+ concurrent users, while working with external and internal data stakeholders."
       ]
     },
     {
@@ -45,7 +44,7 @@ export default function Experience() {
       date: "Jul 2021 - May 2022",
       location: "Bengaluru, KA",
       description: [
-        "Enhanced testing efficiency for new modules and scripts, reduced overall testing time by 15%.",
+        "Enhanced testing efficiency for modules and scripts by implementing CI/CD practices, reducing overall testing time by 15%.",
         "Developed scripts, resolved bugs and customer issues related to SSL renegotiation, session reuse, session tickets, and SSL certificates, reducing issue resolution time by 18%.",
       ]
     },
