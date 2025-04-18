@@ -49,7 +49,15 @@ export default function BlogPost({
               {line.replace("## ", "")}
             </h2>
           );
-        } else if (line.trim()) {
+        } else if (line.trim().startsWith("- ")) {
+            return (
+              <p key={index} className="mb-2 text-gray-700 leading-relaxed pl-4 relative">
+                <span className="absolute left-0 text-black">●</span>
+                <span className="ml-4">{line.trim().replace("- ", "")}</span>
+              </p>
+            );
+          }
+        else if (line.trim()) {
           return (
             <p key={index} className="mb-4 text-gray-700 leading-relaxed">
               {line}
@@ -98,12 +106,6 @@ export default function BlogPost({
           </div>
         </div>
       </main>
-
-      <footer className="border-t py-8">
-        <div className="max-w-5xl mx-auto px-6 text-center text-gray-600">
-          <p>© {new Date().getFullYear()} Mohit Bhatia. All rights reserved.</p>
-        </div>
-      </footer>
     </div>
   );
 }

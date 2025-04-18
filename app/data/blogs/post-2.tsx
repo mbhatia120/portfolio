@@ -1,23 +1,12 @@
 export const blogPost = {
     slug: "post-2",
-    title: "The Evolution of Web Development",
-    date: "April 5, 2024",
-    excerpt: "Reflecting on how web development has transformed from simple HTML pages to complex interactive applications.",
+    title: "Faith",
+    date: "October 10, 2024",
+    excerpt: "Human have evolved from chimpanzee to current form. And this took so many years that they forget are what capable of",
     content: `
-      # The Evolution of Web Development
-  
-      When I first started building websites, a simple knowledge of HTML and CSS was sufficient to create impressive pages. Fast forward to today, and the landscape has completely transformed.
-  
-      ## The JavaScript Renaissance
-  
-      The evolution of JavaScript from a simple scripting language to the backbone of modern web development marks one of the most significant shifts in our field. Frameworks like React and Next.js have revolutionized how we build user interfaces.
-  
-      ## From Monoliths to Microservices
-  
-      Architecture patterns have evolved alongside languages and frameworks. The shift from monolithic applications to microservices and serverless functions has changed how we think about scalability and maintenance.
-  
-      ## The Rise of Developer Experience
-  
-      Perhaps the most welcome change has been the focus on developer experience. Tools like TypeScript, ESLint, and Prettier have made it possible to write cleaner, more maintainable code with fewer bugs.
-    `
+
+      Human have evolved from chimpanzee to current form. And this took so many years that they forget are what capable of, their are many spirits which just don’t have the courage to take risk, including me. I am yet to find a person who is successful and was risk averse. It might be advisable to hedge your risk, but at the same time no one know what’s in the store. And sometimes its better to not to know every possible outcome/consequences of your decision. Because its outside human capability to account for each variable and optimise it to give favourable result. Then what’s the way out?
+
+      It’s always better to have time-bounded deadlines to meet those goal. And re-strategize your efforts if deadline is not meet to have fulfilling life. Ultimately it’s your faith which will bridge the present to future.
+      `
   };

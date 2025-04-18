@@ -58,12 +58,6 @@ export default function Projects() {
           </div>
         </div>
       </main>
-
-      <footer className="border-t py-8">
-        <div className="max-w-5xl mx-auto px-6 text-center text-gray-600">
-          <p>© {new Date().getFullYear()} Mohit Bhatia. All rights reserved.</p>
-        </div>
-      </footer>
     </div>
   );
 }
