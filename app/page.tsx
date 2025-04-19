@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Facebook, Github, Instagram, Linkedin, Mail, Twitter } from "lucide-react";
 import Link from "next/link";
 
 
@@ -26,7 +26,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="min-h-[calc(100vh-4rem)] flex items-center justify-center">
           <div className="max-w-5xl mx-auto px-6 py-20">
-            <div className="flex flex-col md:flex-row items-center md:items-start gap-12">
+            <div className="flex flex-col items-center text-center gap-12">
               <div className="w-48 h-48 overflow-hidden rounded-full">
                 <img
                   src="/Mohit_Bhatia.jpg"
@@ -35,12 +35,12 @@ export default function Home() {
                 />
               </div>
               
-              <div>
-                <h1 className="text-4xl md:text-5xl font-bold mb-6">Hey, I'm Mohit Bhatia</h1>
-                <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+              <div className="flex flex-col items-center">
+                <h1 className="text-4xl md:text-5xl font-bold mb-6 whitespace-nowrap">Hey, I'm Mohit Bhatia</h1>
+                <p className="text-lg md:text-xl text-gray-600 leading-relaxed text-center">
                   Software Engineer at Questt AI, where I work on developing AI agents.
                 </p>
-                <div className="flex gap-6 mt-8">
+                <div className="flex justify-center gap-6 mt-8">
                   <Link 
                     href="https://github.com/mbhatia120" 
                     target="_blank"
@@ -67,6 +67,20 @@ export default function Home() {
                     className="p-2 hover:text-gray-600 transition-colors"
                   >
                     <Mail size={24} />
+                  </Link>
+                  <Link 
+                    href="https://instagram.com/mbhatia120" 
+                    target="_blank"
+                    className="p-2 hover:text-gray-600 transition-colors"
+                  >
+                    <Instagram size={24} />
+                  </Link>
+                  <Link 
+                    href="https://facebook.com/mbhatia120" 
+                    target="_blank"
+                    className="p-2 hover:text-gray-600 transition-colors"
+                  >
+                    <Facebook size={24} />
                   </Link>
                 </div>
               </div>

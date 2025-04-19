@@ -51,9 +51,9 @@ export default function BlogPost({
           );
         } else if (line.trim().startsWith("- ")) {
             return (
-              <p key={index} className="mb-2 text-gray-700 leading-relaxed pl-4 relative">
-                <span className="absolute left-0 text-black">●</span>
-                <span className="ml-4">{line.trim().replace("- ", "")}</span>
+              <p key={index} className="mb-2 text-gray-700 leading-relaxed pl-4 flex items-start gap-2">
+                <span className="text-black">●</span>
+                <span className="flex-1">{line.trim().replace("- ", " ")}</span>
               </p>
             );
           }

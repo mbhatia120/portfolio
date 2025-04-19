@@ -24,35 +24,33 @@ export default function Blog() {
       <main className="pt-32 pb-20">
         <div className="max-w-3xl mx-auto px-6">
           <h1 className="text-4xl font-bold mb-12">Blog</h1>
-          <div className="space-y-12">
+          <div className="space-y-6">
             {blogPosts.map((post) => (
-              <article 
+              <a 
+                href={`/blog/${post.slug}`}
                 key={post.slug} 
-                className="group p-6 border border-transparent rounded-lg transition-all duration-300 hover:border-gray-200 hover:shadow-md hover:bg-gray-50"
+                className="block group"
               >
-                <div className="space-y-3">
-                  <span className="text-sm text-gray-500">{post.date}</span>
-                  <h2 className="text-2xl font-semibold transition-colors duration-300 group-hover:text-blue-600">
-                    <a href={`/blog/${post.slug}`} className="block relative">
+                <article className="p-4 border border-gray-200 rounded-lg transition-all duration-300 hover:border-gray-200 hover:shadow-md hover:bg-gray-50">
+                  <div className="space-y-3">
+                    <span className="text-sm text-gray-500">{post.date}</span>
+                    <h2 className="text-2xl font-semibold transition-colors duration-300 group-hover:text-blue-600">
                       {post.title}
-                      <span className="absolute inset-0" aria-hidden="true" />
-                    </a>
-                  </h2>
-                  <p className="text-gray-600 leading-relaxed">
-                    {post.excerpt}
-                  </p>
-                  <div className="pt-2">
-                    <span className="inline-flex items-center text-sm font-medium text-blue-600 opacity-0 transform translate-x-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-2">
-                      <a href={`/blog/${post.slug}`} className="block relative">
+                    </h2>
+                    <p className="text-gray-600 leading-relaxed">
+                      {post.excerpt}
+                    </p>
+                    <div className="pt-2">
+                      <span className="inline-flex items-center text-sm font-medium text-blue-600 opacity-0 transform translate-x-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-2">
                         Read more 
-                      </a>
-                      <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
-                      </svg>
-                    </span>
+                        <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </article>
+                </article>
+              </a>
             ))}
           </div>
         </div>

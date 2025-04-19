@@ -28,32 +28,30 @@ export default function Projects() {
           <h1 className="text-4xl font-bold mb-12">Projects</h1>
           <div className="space-y-12">
             {projects.map((project) => (
-              <article 
+              <a 
+                href={project.link} 
                 key={project.id} 
-                className="group p-6 border border-transparent rounded-lg transition-all duration-300 hover:border-gray-200 hover:shadow-md hover:bg-gray-50"
+                className="block group"
               >
-                <div className="space-y-3">
-                  <h2 className="text-2xl font-semibold transition-colors duration-300 group-hover:text-blue-600">
-                    <a href={project.link} className="block relative">
+                <article className="p-4 border border-gray-200 rounded-lg transition-all duration-300 hover:border-gray-200 hover:shadow-md hover:bg-gray-50">
+                  <div className="space-y-3">
+                    <h2 className="text-2xl font-semibold transition-colors duration-300 group-hover:text-blue-600">
                       {project.title}
-                      <span className="absolute inset-0" aria-hidden="true" />
-                    </a>
-                  </h2>
-                  <p className="text-gray-600 leading-relaxed">
-                    {project.description}
-                  </p>
-                  <div className="pt-2">
-                    <span className="inline-flex items-center text-sm font-medium text-blue-600 opacity-0 transform translate-x-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-2">
-                      <a href={project.link} className="block relative">
+                    </h2>
+                    <p className="text-gray-600 leading-relaxed">
+                      {project.description}
+                    </p>
+                    <div className="pt-2">
+                      <span className="inline-flex items-center text-sm font-medium text-blue-600 opacity-0 transform translate-x-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-2">
                         View project 
-                      </a>
-                      <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
-                      </svg>
-                    </span>
+                        <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </article>
+                </article>
+              </a>
             ))}
           </div>
         </div>
