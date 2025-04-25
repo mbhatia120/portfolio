@@ -100,7 +100,7 @@ export default function Home() {
                 My time at BITS Pilani sparked my curiosity for systems, design, and software.
               </p>
               <p className="text-lg md:text-xl leading-relaxed">
-                Lately, I’ve been exploring fitness through Cult.fit and sharing life lessons with a philosophical lens on my blog.
+                Lately, I’ve been exploring fitness through Cult.fit and sharing life lessons with a philosophical lens on my blog <a href="/blog" className="text-blue-600 underline hover:text-blue-800 transition-colors">here</a>.
               </p>
               <p className="text-lg md:text-xl leading-relaxed">
                 I’ve also developed a strong interest in psychology and love understanding how our minds shape our actions.
