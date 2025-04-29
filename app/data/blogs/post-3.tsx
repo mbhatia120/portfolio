@@ -2,6 +2,7 @@ export const blogPost = {
     slug: "post-3",
     title: "A note to my two year younger self",
     date: "April 18, 2025",
+    excerpt: "",
     content: `
     
       - social mobility happens in rare cases, and that's how nature is built, resources are scarce.
