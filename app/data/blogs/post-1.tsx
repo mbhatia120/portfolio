@@ -2,7 +2,6 @@ export const blogPost = {
     slug: "post-1",
     title: "In the end",
     date: "May 1, 2024",
-    excerpt: "Let’s believe god created humans, environment, resources, etc. As we delve into the historical context, ",
     content: `
       Let’s believe god created humans, environment, resources, etc. As we delve into the historical context, it becomes evident that the concept of survival of the fittest emerged from the intricacies of evolution, fostering competition for survival. This philosophy aligns with Marx’s perspective, particularly in early societies, where the paramount importance of food for survival became a cornerstone
 

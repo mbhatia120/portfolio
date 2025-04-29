@@ -5,18 +5,20 @@ import { notFound } from "next/navigation";
 import { blogPost as post1 } from "../../data/blogs/post-1";
 import { blogPost as post2 } from "../../data/blogs/post-2";
 import { blogPost as post3 } from "../../data/blogs/post-3";
+import { blogPost as post4 } from "../../data/blogs/post-4";
 
 // In a real application, you would likely fetch this data dynamically
 const blogPosts = {
   "post-1": post1,
   "post-2": post2,
   "post-3": post3,
+  "post-4": post4
 };
 
 // This function tells Next.js which paths to pre-render
 export async function generateStaticParams() {
   // Return an array of objects with the slug parameter
-  return [{ slug: "post-1" }, { slug: "post-2" }, { slug: "post-3" }];
+  return [{ slug: "post-1" }, { slug: "post-2" }, { slug: "post-3" }, {slug: "post-4"}];
 }
 
 export default function BlogPost({

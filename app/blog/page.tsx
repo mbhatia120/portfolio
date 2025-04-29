@@ -1,10 +1,11 @@
 import { blogPost as post1 } from '../data/blogs/post-1';
 import { blogPost as post2 } from '../data/blogs/post-2';
 import { blogPost as post3 } from '../data/blogs/post-3';
+import { blogPost as post4 } from '../data/blogs/post-4';
 
 export default function Blog() {
   // Static blog posts array
-  const blogPosts = [post3, post2, post1];
+  const blogPosts = [post4, post3, post2, post1];
   
   return (
     <div className="min-h-screen bg-white">
