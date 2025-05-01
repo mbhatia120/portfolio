@@ -38,7 +38,7 @@ export default function Home() {
               <div className="flex flex-col items-center">
                 <h1 className="text-4xl md:text-5xl font-bold mb-6 whitespace-nowrap">Hey, I'm Mohit Bhatia</h1>
                 <p className="text-lg md:text-xl text-gray-600 leading-relaxed text-center">
-                  Software Engineer at Questt AI, where I work on developing AI agents.
+                  Software Engineer at Goldman Sachs, managing transaction for GS Bank.
                 </p>
                 <div className="flex justify-center gap-6 mt-8">
                   <Link 
